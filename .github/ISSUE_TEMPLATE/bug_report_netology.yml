@@ -26,9 +26,8 @@ body:
 - type: markdown
   attributes:
     value: |
-          <br><br>
+          <br>
           ---
-
 - type: textarea
   id: bug_steps
   attributes:
