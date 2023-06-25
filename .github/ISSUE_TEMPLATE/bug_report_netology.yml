@@ -81,7 +81,7 @@ body:
 - type: markdown
   attributes:
     value: |
-          <br><br><br>
+          <br><br>
           ---
           
 - type: textarea
@@ -91,6 +91,7 @@ body:
     description: |
           заполнить поле собственными параметрами или выбрать нужное в списках. Пример:
           - **OS**: Windows 11
+          - **Browser**: Edge
     value:
     render:
   validations:
