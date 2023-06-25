@@ -1,6 +1,6 @@
 name: 🐞 Bug report of Netology rules (заполнение в форме)
-description: Шаблон - "Баг репорт" для использования в Issues GitHub, по правилам Нетологии, в формате .YML<br>
-title: "[BUG]: <title>"  
+description: Шаблон - "Баг репорт" для использования в Issues GitHub, по правилам Нетологии, в формате .YML
+title: "[BUG]: <title>"
 labels: [Bug]
 
 body:
@@ -19,7 +19,7 @@ body:
   attributes:
     label:  Описание
     description: "описание возникшей ошибки и/или мнение, что могло повлиять на возникновение дефекта"
-    value: " ... "
+    placeholder: "..."
     render: markdown
   validations:
     required: true
@@ -27,8 +27,7 @@ body:
   attributes:
     value: |
           <br><br>
-          ---
-          
+          ---          
 - type: textarea
   id: bug_steps
   attributes:
