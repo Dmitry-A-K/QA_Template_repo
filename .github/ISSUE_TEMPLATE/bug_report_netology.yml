@@ -89,7 +89,7 @@ body:
         Вставить сюда
         </p>
         </details> 
-    render: markdown
+    render:
   validations:
     required: false
 - type: markdown
