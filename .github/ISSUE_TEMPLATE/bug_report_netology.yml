@@ -6,8 +6,17 @@ labels: [Bug]
 body:
 - type: textarea
   attributes:
-    label: Current Behavior
-    description: A concise description of what you're experiencing.
+    label: Environment
+    description: |
+      examples:
+        - **OS**: Ubuntu 20.04
+        - **Node**: 13.14.0
+        - **npm**: 7.6.3
+    value: |
+        - OS:
+        - Node:
+        - npm:
+    render: markdown
   validations:
     required: false
 - type: checkboxes
