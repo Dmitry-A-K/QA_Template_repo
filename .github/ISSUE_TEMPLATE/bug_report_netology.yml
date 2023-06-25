@@ -5,13 +5,13 @@ labels: [Bug]
 
 body:
 - type: input
-  id: prevalence
+  id: title
   attributes:
-    label: Bug prevalence
-    description: "How often do you or others encounter this bug?"
+    label: Название [2]
+    description: "Что? Где? Когда?"
     placeholder: "Example: Whenever I visit the personal account page (1-2 times a week)"
   validations:
-    required: true   
+    required: true
 - type: textarea
   attributes:
     label: Окружение
