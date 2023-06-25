@@ -81,9 +81,8 @@ body:
 - type: markdown
   attributes:
     value: |
-          <br>
           ---
-          <br>       
+          
 - type: textarea
   id: bug_surrounding
   attributes:
