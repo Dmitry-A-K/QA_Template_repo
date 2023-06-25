@@ -22,7 +22,7 @@ body:
     value: " ... "
     render: markdown
   validations:
-    required: true   
+    required: true
 - type: input
   id: bug_expected
   attributes:
