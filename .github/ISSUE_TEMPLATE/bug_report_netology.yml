@@ -4,15 +4,14 @@ title: "[BUG] <title>"
 labels: [Bug]
 
 body:
-- type: textarea
-  id: repro
+- type: input
+  id: prevalence
   attributes:
-    label: Название [2]
-    description: "How do you trigger this bug? Please walk us through it step by step."
-    value: |
-    render: markdown
+    label: Bug prevalence
+    description: "How often do you or others encounter this bug?"
+    placeholder: "Example: Whenever I visit the personal account page (1-2 times a week)"
   validations:
-    required: true
+    required: true   
 - type: textarea
   attributes:
     label: Окружение
