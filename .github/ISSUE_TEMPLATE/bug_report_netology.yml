@@ -16,14 +16,7 @@ body:
     placeholder:  "Что? Где? Когда?"
   validations:
     required: true
-- type: input
-  id: bug_expected
-  attributes:
-    label:  Ожидаемый результат
-    description: "ожидаемое поведение тестируемого объекта"
-     placeholder:
-  validations:
-    required: true
+
     
 - type: textarea
   id: bug_description
