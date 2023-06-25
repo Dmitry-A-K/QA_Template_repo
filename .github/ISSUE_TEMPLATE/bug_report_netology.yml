@@ -26,7 +26,7 @@ body:
 - type: markdown
   attributes:
     value: |
-          <br>
+          <br><br>
           ---
           
 - type: textarea
@@ -38,8 +38,7 @@ body:
         1.  
         2.  
         3.  
-        4.
-        5.
+        ..
     render:
   validations:
     required: true
@@ -58,22 +57,21 @@ body:
     description: "фактическое поведение проверяемого объекта"
     placeholder:  " ... "
   validations:
-    required: true
-    
+    required: true    
 - type: input
   id: bug_url
   attributes:
     label: Локация дефекта
-    description: "Локация дефекта — это место тестируемого класса, где, на ваш взгляд, происходит дефект; можно указать просто на первую строчку объявления метода или вставить ссылку. Чтобы красиво сослаться на нужное место в коде, откройте файл класса на GitHub, нажмите на номер или номера соответствующей строки, удерживая Shift, и рядом слева нажмите на троеточие, в выпавшем меню нажмите Copy permalink. В буфер обмена скопируется прямая ссылка на строку этого коммита. Теперь вы её можете просто вставить в текст Issue, как в шаблоне: [Нетологя] (https://https://netology.ru/) без пробела."
-    placeholder:  "ссылка на дефект"
+    description: "Локация дефекта — это место тестируемого класса, где, на ваш взгляд, происходит дефект; можно указать просто на первую строчку объявления метода или вставить ссылку. Чтобы красиво сослаться на нужное место в коде, откройте файл класса на GitHub, нажмите на номер или номера соответствующей строки, удерживая Shift, и рядом слева нажмите на троеточие, в выпавшем меню нажмите Copy permalink. В буфер обмена скопируется прямая ссылка на строку этого коммита. Теперь вы её можете просто вставить в текст Issue."
+    placeholder:  "шаблон: [Нетологя](https://https://netology.ru/)"
   validations:
     required: true
 - type: input
   id: bug_screen
   attributes:
     label: Скриншот дефекта
-    description: ". Шаблон: ![image](https://https://netology.ru/)"
-    placeholder:  "![image](https://https://netology.ru/)"
+    description:  "шаблон: ![image](https://https://netology.ru/)"
+    placeholder:  "шаблон: ![image](https://https://netology.ru/)"
   validations:
     required: true
 - type: textarea
