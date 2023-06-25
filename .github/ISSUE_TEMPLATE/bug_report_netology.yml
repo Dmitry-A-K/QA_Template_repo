@@ -37,7 +37,7 @@ body:
   id: bug_steps
   attributes:
     label: Шаги воспроизведения
-    description: "заполнить пошаговый список, для воспроизведения теста в котором выявилась ошибка"
+    description: "заполнить нумерованный список, для воспроизведения теста в котором выявилась ошибка"
     placeholder: |
         1.  
         2.  
@@ -83,7 +83,12 @@ body:
   attributes:
     label:  Лог сборки
     description: "скопировать текст лога сборки (Ctrl+C) и вставить (Ctrl+V) в этот блок"
-    value:
+    value:  |
+        <details><summary>Details</summary>
+        <p>
+        Вставить сюда
+        </p>
+        </details> 
     render: markdown
   validations:
     required: false
