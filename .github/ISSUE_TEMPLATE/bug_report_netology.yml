@@ -18,9 +18,9 @@ body:
     required: true
 
 - type: input
-  id: title
+  id: bug_expected
   attributes:
-    label:  Название
+    label:  Ожидаемый результат
     description: "ddkk"
     placeholder:  "Что? Где? Когда?"
   validations:
