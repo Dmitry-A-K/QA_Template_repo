@@ -1,7 +1,8 @@
 name: 🐞 Bug report of Netology rules
 description: Шаблон - "Баг репорт" для использования в Issues GitHub, по правилам Нетологии.
-title: "[DATE]:[FEATURE NAME][BUG] <title>"  
+title: "[BUG]: <title>"  
 labels: [Bug]
+assignees:
 
 body:
 - type: input
@@ -130,7 +131,7 @@ body:
     label: "** Приложение **"
     options:
       - IntelliJ IDEA Community Edition
-      - EDGE
+      - Edge
       - Chrome
       - Brave
   validations:
@@ -145,12 +146,3 @@ body:
   validations:
     required: false
     
-- type: checkboxes
-  id: operating-systems
-  attributes:
-    label: Which operating systems have you used?
-    description: You may select more than one.
-    options:
-      - label: macOS
-      - label: Windows
-      - label: Linux    
