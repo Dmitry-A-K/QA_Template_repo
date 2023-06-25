@@ -81,11 +81,6 @@ body:
   validations:
     required: false
     
-- type: markdown
-  attributes:
-    value: |
-        ---
-        ######  ЗАПОЛНИТЬ ПОЛЕ СОБСТВЕННЫМИ ПАРАМЕТРАМИ ИЛИ ВЫБРАТЬ НУЖНОЕ В СПИСКАХ
         
 - type: textarea
   id: bug_surrounding
