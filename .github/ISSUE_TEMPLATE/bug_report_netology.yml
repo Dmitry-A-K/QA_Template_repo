@@ -7,13 +7,13 @@ body:
 - type: input
   id: title
   attributes:
-    label: Название [2]
+    label: Название
     description: |
       Последовательный ответ на три вопроса:
       ЧТО не так работает?
       ГДЕ не работает, в каком месте продукта?
       КОГДА данная проблема проявляется?
-    placeholder:  "Что? Где? Когда?"
+    placeholder:  "Что? Где? Когда?                        "
   validations:
     required: true
 - type: textarea
