@@ -89,14 +89,12 @@ body:
   attributes:
     label: ТЕСТОВОЕ ОКРУЖЕНИЕ
     description: |
-          заполнить поле собственными параметрами или выбрать нужное в списках. Пример:
-          - **OS**: Windows 11
-          - **Browser**: Edge
+          заполнить поле собственными параметрами или выбрать нужное в списках.
     placeholder: |
-      1. In this environment...
-      2. With this config...
-      3. Run '...'
-      4. See error...
+       Пример:
+        - **OS**: Ubuntu 20.04
+        - **Node**: 13.14.0
+        - **npm**: 7.6.3
     render:
   validations:
     required: false
