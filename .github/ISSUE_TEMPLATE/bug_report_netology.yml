@@ -88,12 +88,12 @@ body:
 - type: textarea
   id: bug_surrounding
   attributes:
-      label: ТЕСТОВОЕ ОКРУЖЕНИЕ
+    label: ТЕСТОВОЕ ОКРУЖЕНИЕ
     description: "заполнить пошаговый список, для воспроизведения теста в котором выявилась ошибка"
     value: 
     render:
   validations:
-    required: true
+    required: false
     
 - type: dropdown
   id: test_os
