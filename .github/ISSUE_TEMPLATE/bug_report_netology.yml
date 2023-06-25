@@ -28,6 +28,7 @@ body:
     value: |
           <br>
           ---
+          
 - type: textarea
   id: bug_steps
   attributes:
