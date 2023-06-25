@@ -87,19 +87,7 @@ body:
         ---
         ######  ЗАПОЛНИТЬ ПОЛЕ СОБСТВЕННЫМИ ПАРАМЕТРАМИ ИЛИ ВЫБРАТЬ НУЖНОЕ В СПИСКАХ <br>
         
-- type: textarea
-  attributes:
-    label: Тестовое окружение
-    description: "заполнить поле собственными параметрами или выбрать нужное в списках"
-      Пример:
-        - ** OS **: Ubuntu 20.04
-        - ** Node **: 13.14.0
-        - ** npm **: 7.6.3
-    value: |
-        ...
-    render: markdown
-  validations:
-    required: false
+
 - type: dropdown
   id: test_os
   attributes:
