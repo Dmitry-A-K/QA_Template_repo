@@ -8,7 +8,7 @@ body:
 - type: input
   id: title
   attributes:
-    label: Название
+    label:  Название
     description: |
       Последовательный ответ на три вопроса:
       ЧТО не так работает?
@@ -21,7 +21,7 @@ body:
 - type: textarea
   id: bug_description
   attributes:
-    label: Описание
+    label:  Описание
     description: "Описание возникшей ошибки и мнение как её можно исправить"
     value: " - "
     render: markdown
@@ -31,9 +31,9 @@ body:
 - type: input
   id: bug_expected
   attributes:
-    label: Ожидаемый результат
+    label:  Ожидаемый результат
     description: "ожидаемое поведение тестируемого объекта"
-     placeholder:  " ... "
+     placeholder:  " "
   validations:
     required: true
     
@@ -42,7 +42,7 @@ body:
   attributes:
     label: Актуальный результат
     description: "реальное поведение тестируемого объекта"
-     placeholder:  " ... "
+     placeholder:  " "
   validations:
     required: true
     
