@@ -90,7 +90,9 @@ body:
   id: bug_surrounding
   attributes:
     label: ТЕСТОВОЕ ОКРУЖЕНИЕ
-    description: "заполнить поле собственными параметрами или выбрать нужное в списках"
+    description: |
+          заполнить поле собственными параметрами или выбрать нужное в списках. Пример:
+          - **OS**: Windows 11
     value:
     render:
   validations:
