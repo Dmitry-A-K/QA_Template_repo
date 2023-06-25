@@ -6,7 +6,7 @@ labels: [Bug]
 body:
 - type: textarea
   attributes:
-    label: Environment
+    label: Окружение
     description: |
       examples:
         - **OS**: Ubuntu 20.04
