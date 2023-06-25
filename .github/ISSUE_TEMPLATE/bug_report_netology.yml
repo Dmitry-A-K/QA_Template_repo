@@ -6,8 +6,9 @@ labels: [Bug]
 body:
 - type: markdown
   attributes:
-    value:  |  <br>
-          ---     
+    value:  |  
+        <br>  
+        ---     
 - type: input
   id: title
   attributes:
