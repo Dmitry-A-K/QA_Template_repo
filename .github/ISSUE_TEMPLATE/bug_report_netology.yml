@@ -86,19 +86,22 @@ body:
     value: |
         ---
         ######  ЗАПОЛНИТЬ ПОЛЕ СОБСТВЕННЫМИ ПАРАМЕТРАМИ ИЛИ ВЫБРАТЬ НУЖНОЕ В СПИСКАХ <br>
-        
 - type: textarea
+  id: bug_list
   attributes:
-    label:  Логи сборки
-    description: "Скопировать из приложения текст лога Ctrl+C и вставить Ctrl+V в этот блок."
-      Пример:
-        - ** OS **: Ubuntu 20.04
+      label: ТЕСТОВОЕ ОКРУЖЕНИЕ
+    description: "заполнить пошаговый список, для воспроизведения теста в котором выявилась ошибка"
     value: |
-        - ** OS **: Ubuntu 20.04
-    render: markdown
+        1.  
+        2.  
+        3.  
+        4.
+        5.
+        6.
+        7.
+    render:
   validations:
-    required: false        
-
+    required: true
 - type: dropdown
   id: test_os
   attributes:
