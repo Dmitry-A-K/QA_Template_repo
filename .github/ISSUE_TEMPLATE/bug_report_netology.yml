@@ -99,7 +99,7 @@ body:
 - type: dropdown
   id: test_os
   attributes:
-    label: "** OS **"
+    label: "**OS**"
     options:
       - Windows 11
       - Windows 10
@@ -126,7 +126,7 @@ body:
 - type: dropdown
   id: test_programm
   attributes:
-    label: "** Приложение **"
+    label: "**Приложение**"
     options:
       - IntelliJ IDEA Community Edition
       - Edge
@@ -138,7 +138,7 @@ body:
 - type: dropdown
   id: test_surrounding
   attributes:
-    label: "** Среда тестирования **"
+    label: "**Среда тестирования**"
     options:
       - "Java: OpenJDK 11"
   validations:
