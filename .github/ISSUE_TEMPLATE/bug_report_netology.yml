@@ -17,6 +17,16 @@ body:
   validations:
     required: true
 - type: textarea
+  id: bug_description
+  attributes:
+    label: Описание
+    description: "Описание ошибки"
+    placeholder:  " "
+  validations:
+    required: true
+
+    
+- type: textarea
   attributes:
     label: Окружение
     description: |
