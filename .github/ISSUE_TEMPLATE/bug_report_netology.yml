@@ -21,7 +21,7 @@ body:
   id: title
   attributes:
     label:  Название
-    description: 'ddkk"
+    description: "ddkk"
     placeholder:  "Что? Где? Когда?"
   validations:
     required: true
