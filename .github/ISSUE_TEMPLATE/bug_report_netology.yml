@@ -83,8 +83,9 @@ body:
 - type: markdown
   attributes:
     value: |
-        ---
-        ######  ЗАПОЛНИТЬ ПОЛЕ СОБСТВЕННЫМИ ПАРАМЕТРАМИ ИЛИ ВЫБРАТЬ НУЖНОЕ В СПИСКАХ
+          <br>
+          ---
+          <br>       
 - type: textarea
   id: bug_surrounding
   attributes:
@@ -143,3 +144,13 @@ body:
       - "Java: OpenJDK 11"
   validations:
     required: false
+    
+- type: checkboxes
+  id: operating-systems
+  attributes:
+    label: Which operating systems have you used?
+    description: You may select more than one.
+    options:
+      - label: macOS
+      - label: Windows
+      - label: Linux    
