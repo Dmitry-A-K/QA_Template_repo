@@ -4,6 +4,11 @@ title: "[BUG] <title>"
 labels: [Bug]
 
 body:
+- type: markdown
+  attributes:
+    value: |
+*Шаблон файла "Баг репорт" с расширением .md для использования в Issues [^1]*
+[^1]: Сноски:<br><br>Во всех .md-файлах, внутри описания баг-репортов используется формат Markdown.
 - type: textarea
   attributes:
     label: Окружение
