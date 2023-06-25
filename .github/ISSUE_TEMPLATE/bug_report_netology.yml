@@ -94,7 +94,7 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: test_os
+  id: test_programm
   attributes:
     label: "** Приложение **"
     options:
