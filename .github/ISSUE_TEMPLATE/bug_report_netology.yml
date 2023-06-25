@@ -62,20 +62,20 @@ body:
     placeholder:  " ... "
   validations:
     required: true    
-- type: input
+- type: textarea
   id: bug_url
   attributes:
     label: Локация дефекта
     description: "место тестируемого класса, где происходит дефект; можно указать первую строчку объявления метода или вставить ссылку. Чтобы красиво сослаться на нужное место в коде, нужно открыть файл класса на GitHub, нажать на номер (или номера) соответствующей строки удерживая Shift, рядом слева нажмать на троеточие, в выпавшем меню выбрать Copy permalink. В буфер обмена скопируется прямая ссылка на строку этого коммита. Теперь её можете просто вставить в текст Issue."
-    placeholder:  "шаблон ссылки: [Нетологя](https://https://netology.ru/)"
+    placeholder:  "шаблон ссылки: [Название](url:)"
   validations:
     required: true
 - type: textarea
   id: bug_screen
   attributes:
     label: Скриншот дефекта
-    description:  "добавить ссылку на файл копии экрана с выявленным дефектом"
-    placeholder:  "шаблон: ![image](https://https://netology.ru/)"
+    description:  "добавить ссылку на файл копии экрана с выявленным дефектом; можно указать ссылку на файл, либо сделать копию нужной части экрана (Win+Shift+S), затем вставить (Ctrl+V) в поле. GitHub закачает к себе копию экрана из буфера обмена"
+    placeholder:  "шаблон ссылки: ![image](url:)"
   validations:
     required: true
 - type: textarea
