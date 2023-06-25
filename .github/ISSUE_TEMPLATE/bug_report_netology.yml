@@ -137,7 +137,6 @@ body:
       - EDGE
       - Chrome
       - Brave
-      - 
   validations:
     required: true
 - type: dropdown
@@ -147,10 +146,6 @@ body:
     options:
       - ---
       - Java: OpenJDK 11
-      - 
-      - 
-      - 
-      - 
   validations:
     required: true
          
