@@ -23,7 +23,7 @@ body:
   id: bug_description
   attributes:
     label:  Описание
-    description: "описание возникшей ошибки и/или мнение, что могло повлиять на возникновение дефекта"
+    description: "описание возникшего дефекта и/или мнение, что могло привести к его возникновение"
     placeholder: "..."
     render: markdown
   validations:
@@ -86,8 +86,10 @@ body:
     value:  |
         <details><summary>MVN CLEAN TEST</summary>
         <p>
+
         
         ВСТАВИТЬ ВМЕСТО ЭТОГО ТЕКСТА
+
         
         </p>
         </details> 
@@ -116,29 +118,49 @@ body:
     required: false
     
 - type: dropdown
-  id: test_os
+  id: test_desktop_os
   attributes:
-    label: "OS"
+    label: "Настольные операционные системы"
     options:
-      - Windows 11
-      - Windows 10
-      - Windows 8
-      - Windows 7
-      - Windows Vista
-      - Windows XP
-      - macOS 14
-      - macOS 13
-      - macOS 12
-      - macOS 11
-      - macOS 10
-      - Andoid 13
-      - Andoid 12
-      - Andoid 11
-      - Andoid 10
-      - Andoid 9
-      - Andoid 8
-      - Linux
-      - Ubuntu
+      -  Windows 11
+      -  Windows 10
+      -  Windows 8
+      -  Windows 7
+      -  Windows Vista
+      -  Windows XP
+      -  macOS 14
+      -  macOS 13
+      -  macOS 12
+      -  macOS 11
+      -  macOS 10
+      -  Linux
+      -  Ubuntu
+  validations:
+    required: false
+- type: dropdown
+  id: test_mobile_os
+  attributes:
+    label: "Мобильные операционные системы"
+    options:
+      -  Andoid 13
+      -  Andoid 12
+      -  Andoid 11
+      -  Andoid 10
+      -  Andoid 9
+      -  Andoid 8
+      -  iOS 16
+      -  iOS 15
+      -  iOS 14
+      -  iOS 13
+      -  iOS 11
+      -  iOS 10
+      -  iOS 9
+      -  iOS 8
+      -  iOS 7
+      -  iOS 6
+      -  iOS 5
+      -  Linux
+      -  Ubuntu
   validations:
     required: false
     
