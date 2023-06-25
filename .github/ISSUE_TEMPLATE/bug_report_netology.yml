@@ -11,16 +11,36 @@ body:
     description: |
         последовательный ответ на три вопроса:
         ЧТО не так работает? ГДЕ не работает (в каком месте продукта)?  КОГДА данная проблема проявляется?
-    placeholder:  "Что, где, когда."
+    placeholder:  "что, где, когда."
   validations:
     required: true
 - type: textarea
   id: bug_description
   attributes:
     label:  Описание
-    description: "подробное описание возникшей ошибки и/или мнение, что могло повлиять на её возникновение"
+    description: "описание возникшей ошибки и/или мнение, что могло повлиять на возникновение дефекта"
     value: " ... "
     render: markdown
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: |
+          <br><br>
+          ---
+
+- type: textarea
+  id: bug_steps
+  attributes:
+    label: Шаги воспроизведения
+    description: "заполнить пошаговый список, для воспроизведения теста в котором выявилась ошибка"
+    placeholder: |
+        1.  
+        2.  
+        3.  
+        4.
+        5.
+    render:
   validations:
     required: true
 - type: input
@@ -39,20 +59,7 @@ body:
     placeholder:  " ... "
   validations:
     required: true
-- type: textarea
-  id: bug_list
-  attributes:
-    label: Шаги воспроизведения
-    description: "заполнить пошаговый список, для воспроизведения теста в котором выявилась ошибка"
-    value: |
-        1.  
-        2.  
-        3.  
-        4.
-        5.
-    render:
-  validations:
-    required: true
+    
 - type: input
   id: bug_url
   attributes:
