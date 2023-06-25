@@ -60,7 +60,6 @@ body:
     label:  Фактический результат
     description: "фактическое поведение проверяемого объекта"
     placeholder:  " ... "
-    render:
   validations:
     required: true    
 - type: input
