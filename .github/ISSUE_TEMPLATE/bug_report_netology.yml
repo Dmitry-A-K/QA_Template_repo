@@ -18,7 +18,7 @@ body:
   id: bug_description
   attributes:
     label:  Описание
-    description: "подробное описание возникшей ошибки и мнение, что могло повлиять на её возникновение"
+    description: "подробное описание возникшей ошибки и/или мнение, что могло повлиять на её возникновение"
     value: " ... "
     render: markdown
   validations:
@@ -43,7 +43,7 @@ body:
   id: bug_list
   attributes:
     label: Шаги воспроизведения
-    description: "заполнить подробный пошаговый список, для воспроизведения теста в котором выявилась ошибка"
+    description: "заполнить пошаговый список, для воспроизведения теста в котором выявилась ошибка"
     value: |
         1.  
         2.  
@@ -55,7 +55,6 @@ body:
     render: bash
   validations:
     required: true
-    
 - type: input
   id: bug_url
   attributes:
@@ -63,7 +62,7 @@ body:
     description: "Локация дефекта — это место тестируемого класса, где, на ваш взгляд, происходит дефект; можно указать просто на первую строчку объявления метода или вставить ссылку. Чтобы красиво сослаться на нужное место в коде, откройте файл класса на GitHub, нажмите на номер или номера соответствующей строки, удерживая Shift, и рядом слева нажмите на троеточие, в выпавшем меню нажмите Copy permalink. В буфер обмена скопируется прямая ссылка на строку этого коммита. Теперь вы её можете просто вставить в текст Issue, как в шаблоне: [Нетологя] (https://https://netology.ru/) без пробела."
     placeholder:  "https://"
   validations:
-    required: true     
+    required: true
 - type: input
   id: bug_screen
   attributes:
@@ -84,7 +83,8 @@ body:
 - type: markdown
   attributes:
     value: |
-        ###  ЗАПОЛНИТЬ ПОЛЕ ИЛИ ВЫБРАТЬ ИЗ СПИСКОВ
+        ---
+        ####  ЗАПОЛНИТЬ ПОЛЕ ИЛИ ВЫБРАТЬ ИЗ СПИСКОВ
 - type: textarea
   attributes:
     label: Окружение
@@ -99,8 +99,7 @@ body:
         - npm:
     render: markdown
   validations:
-    required: true
-    
+    required: true    
 - type: dropdown
   id: test_os
   attributes:
@@ -118,14 +117,14 @@ body:
       - macOS 12
       - macOS 11
       - macOS 10
-      - Linux
-      - Ubuntu
       - Andoid 13
       - Andoid 12
       - Andoid 11
       - Andoid 10
       - Andoid 9
       - Andoid 8
+      - Linux
+      - Ubuntu
   validations:
     required: true
 - type: dropdown
@@ -136,23 +135,22 @@ body:
       - ---
       - IntelliJ IDEA Community Edition
       - EDGE
-      - Windows 7
-      - Windows Vista
-      - Windows XP
+      - Chrome
+      - Brave
+      - 
   validations:
     required: true
-
-
-
-
-
-    
-
-
-    
-- type: markdown
+- type: dropdown
+  id: test_programm
   attributes:
-    value: |
-      ---
-      ---
-           
+    label: "** Среда **"
+    options:
+      - ---
+      - Java: OpenJDK 11
+      - 
+      - 
+      - 
+      - 
+  validations:
+    required: true
+         
