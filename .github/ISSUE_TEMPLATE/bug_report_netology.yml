@@ -71,9 +71,9 @@ body:
 - type: input
   id: bug_screen
   attributes:
-    label: Скриншот ошибки
-    description: "Скриншот - для загрузки изображений вы можете воспользоваться кнопкой, находящейся сразу под полем редактирования текста. Также возможна автозагрузка скриншотов прямо из буфера обмена через Ctrl+V с автовставкой в место нахождения курсора. Шаблон: ![image] (https://https://netology.ru/) без пробела."
-    placeholder:  "ссылка на изображение"
+    label: Скриншот дефекта
+    description: ". Шаблон: ![image](https://https://netology.ru/)"
+    placeholder:  "![image](https://https://netology.ru/)"
   validations:
     required: true
 - type: textarea
