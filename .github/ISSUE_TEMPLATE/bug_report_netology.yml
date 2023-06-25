@@ -7,7 +7,7 @@ body:
 - type: markdown
   attributes:
     value: |
-*Шаблон файла "Баг репорт" с расширением .md для использования в Issues [^1]*
+            *Шаблон файла "Баг репорт" с расширением .md для использования в Issues [^1]*
 - type: textarea
   attributes:
     label: Окружение
