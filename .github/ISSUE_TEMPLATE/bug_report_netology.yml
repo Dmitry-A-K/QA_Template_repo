@@ -1,6 +1,6 @@
 name: 🐞 Bug report of Netology rules
 description: Шаблон - "Баг репорт" для использования в Issues GitHub, по правилам Нетологии.
-title: "[FEATURE NAME][BUG] <title>" [DATE]: 
+title: "[DATE]:[FEATURE NAME][BUG] <title>"  
 labels: [Bug]
 
 body:
