@@ -79,15 +79,33 @@ body:
   attributes:
     label: "**OS**"
     options:
+      - ---
       - Windows 11
       - Windows 10
       - Windows 8
       - Windows 7
       - Windows Vista
       - Windows XP
+      - macOS 14
+      - macOS 13
+      - macOS 12
+      - macOS 11
+      - macOS 10
   validations:
     required: true
-
+- type: dropdown
+  id: test_os
+  attributes:
+    label: "** Приложение **"
+    options:
+      - ---
+      - IntelliJ IDEA Community Edition
+      - Windows 8
+      - Windows 7
+      - Windows Vista
+      - Windows XP
+  validations:
+    required: true
 
 
 
