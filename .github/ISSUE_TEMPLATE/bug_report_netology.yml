@@ -141,7 +141,7 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: test_programm
+  id: test_surrounding
   attributes:
     label: "** Среда **"
     options:
