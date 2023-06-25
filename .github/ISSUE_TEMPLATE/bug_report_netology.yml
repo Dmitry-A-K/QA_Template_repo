@@ -1,11 +1,11 @@
 name: 🐞 Bug
-description: File a bug/issue
+description: Шаблон файла "Баг репорт" для использования в Issues
 title: "[BUG] <title>"
 labels: [Bug]
 
 body:
 - type: input
-  id: bug_title
+  id: title
   attributes:
     label:  Название
     description: |
@@ -83,8 +83,8 @@ body:
 - type: markdown
   attributes:
     value: |
-        ####  ЗАПОЛНИТЬ ПОЛЕ ИЛИ ВЫБРАТЬ ИЗ СПИСКОВ
-        
+        ---
+        ####  ЗАПОЛНИТЬ ПОЛЕ ИЛИ ВЫБРАТЬ ИЗ СПИСКОВ        
 - type: textarea
   attributes:
     label: Окружение
@@ -94,12 +94,12 @@ body:
         - **Node**: 13.14.0
         - **npm**: 7.6.3
     value: |
-        - OS:
-        - Node:
-        - npm:
+        - **OS**:
+        - **Node**:
+        - **npm**:
     render: markdown
   validations:
-    required: true
+    required: false
 - type: dropdown
   id: test_os
   attributes:
@@ -126,7 +126,7 @@ body:
       - Linux
       - Ubuntu
   validations:
-    required: true
+    required: false
 - type: dropdown
   id: test_programm
   attributes:
@@ -138,14 +138,14 @@ body:
       - Chrome
       - Brave
   validations:
-    required: true
+    required: false
 - type: dropdown
   id: test_surrounding
   attributes:
-    label: "** Среда **"
+    label: "** Среда тестирования **"
     options:
       - ---
-      - Java: OpenJDK 11
+      - "Java: OpenJDK 11"
   validations:
-    required: true
+    required: false
          
