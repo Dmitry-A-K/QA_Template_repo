@@ -48,6 +48,10 @@ body:
         1.  
         2.  
         3.  
+        4.
+        5.
+        6.
+        7.
         ..
     render: bash
   validations:
@@ -68,12 +72,26 @@ body:
     placeholder:  "https://"
   validations:
     required: true
-
 - type: markdown
   attributes:
     value: |
-      ---  Заполнить 
-      
+        ###  ЗАПОЛНИТЬ ПОЛЕ ИЛИ ВЫБРАТЬ ИЗ СПИСКОВ
+- type: textarea
+  attributes:
+    label: Окружение
+    description: |
+      Пример:
+        - **OS**: Ubuntu 20.04
+        - **Node**: 13.14.0
+        - **npm**: 7.6.3
+    value: |
+        - OS:
+        - Node:
+        - npm:
+    render: markdown
+  validations:
+    required: true
+    
 - type: dropdown
   id: test_os
   attributes:
@@ -91,6 +109,14 @@ body:
       - macOS 12
       - macOS 11
       - macOS 10
+      - Linux
+      - Ubuntu
+      - Andoid 13
+      - Andoid 12
+      - Andoid 11
+      - Andoid 10
+      - Andoid 9
+      - Andoid 8
   validations:
     required: true
 - type: dropdown
@@ -100,7 +126,7 @@ body:
     options:
       - ---
       - IntelliJ IDEA Community Edition
-      - Windows 8
+      - EDGE
       - Windows 7
       - Windows Vista
       - Windows XP
@@ -112,21 +138,7 @@ body:
 
 
     
-- type: textarea
-  attributes:
-    label: Окружение
-    description: |
-      Пример:
-        - **OS**: Ubuntu 20.04
-        - **Node**: 13.14.0
-        - **npm**: 7.6.3
-    value: |
-        - OS:
-        - Node:
-        - npm:
-    render: markdown
-  validations:
-    required: true
+
 - type: textarea
   id: bug_log
   attributes:
