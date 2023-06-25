@@ -70,12 +70,11 @@ body:
     placeholder:  "шаблон ссылки: [Нетологя](https://https://netology.ru/)"
   validations:
     required: true
-- type: input
+- type: textarea
   id: bug_screen
   attributes:
     label: Скриншот дефекта
     description:  "добавить ссылку на файл копии экрана с выявленным дефектом"
-    value:     "[](url)"
     placeholder:  "шаблон: ![image](https://https://netology.ru/)"
   validations:
     required: true
