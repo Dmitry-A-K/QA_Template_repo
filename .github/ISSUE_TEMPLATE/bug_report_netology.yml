@@ -5,36 +5,42 @@ labels: [Bug]
 
 body:
 - type: input
-  id: title
+  id: bug_title
   attributes:
     label:  Название
     description: |
-      Последовательный ответ на три вопроса:
-      ЧТО не так работает?
-      ГДЕ не работает, в каком месте продукта?
-      КОГДА данная проблема проявляется?
-    placeholder:  "Что? Где? Когда?"
+      Последовательный ответ на три вопроса:  ЧТО не так работает?
+      ГДЕ не работает, в каком месте продукта?  КОГДА данная проблема проявляется?
+    placeholder:  "Что, где, когда."
   validations:
     required: true
-
-- type: input
-  id: bug_expected
-  attributes:
-    label:  Ожидаемый результат
-    description: "ddkk"
-    placeholder:  "Что? Где? Когда?"
-  validations:
-    required: true
-    
 - type: textarea
   id: bug_description
   attributes:
     label:  Описание
-    description: "Описание возникшей ошибки и мнение как её можно исправить"
-    value: " - "
+    description: "Описание возникшей ошибки и мнение, что могло привести к ошибке"
+    value: " ... "
     render: markdown
   validations:
+    required: true   
+- type: input
+  id: bug_expected
+  attributes:
+    label:  Ожидаемый результат
+    description: "ожидаемое поведение проверяемого объекта"
+    placeholder:  " ... "
+  validations:
     required: true
+- type: input
+  id: bug_actual
+  attributes:
+    label:  Фактический результат
+    description: "фактическое поведение проверяемого объекта"
+    placeholder:  " ... "
+  validations:
+    required: true
+    
+
     
 
     
