@@ -66,23 +66,24 @@ body:
   id: bug_url
   attributes:
     label: Локация дефекта
-    description: "место тестируемого класса, где, на ваш взгляд, происходит дефект; можно указать просто на первую строчку объявления метода или вставить ссылку. Чтобы красиво сослаться на нужное место в коде, откройте файл класса на GitHub, нажмите на номер или номера соответствующей строки, удерживая Shift, и рядом слева нажмите на троеточие, в выпавшем меню нажмите Copy permalink. В буфер обмена скопируется прямая ссылка на строку этого коммита. Теперь вы её можете просто вставить в текст Issue."
-    placeholder:  "шаблон: [Нетологя](https://https://netology.ru/)"
+    description: "место тестируемого класса, где происходит дефект; можно указать первую строчку объявления метода или вставить ссылку. Чтобы красиво сослаться на нужное место в коде, нужно открыть файл класса на GitHub, нажать на номер (или номера) соответствующей строки удерживая Shift, рядом слева нажмать на троеточие, в выпавшем меню выбрать Copy permalink. В буфер обмена скопируется прямая ссылка на строку этого коммита. Теперь её можете просто вставить в текст Issue."
+    placeholder:  "шаблон ссылки: [Нетологя](https://https://netology.ru/)"
   validations:
     required: true
 - type: input
   id: bug_screen
   attributes:
     label: Скриншот дефекта
-    description:  "Копия экрана с дефектом"
+    description:  "добавить ссылку на файл копии экрана с выявленным дефектом"
     placeholder:  "шаблон: ![image](https://https://netology.ru/)"
+    Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
   validations:
     required: true
 - type: textarea
   id: bug_log
   attributes:
     label:  Лог сборки
-    description: "скопировать текст лога Ctrl+C и вставить Ctrl+V в этот блок."
+    description: "скопировать текст лога сборки (Ctrl+C) и вставить (Ctrl+V) в этот блок"
     value:
     render: markdown
   validations:
