@@ -92,7 +92,11 @@ body:
           заполнить поле собственными параметрами или выбрать нужное в списках. Пример:
           - **OS**: Windows 11
           - **Browser**: Edge
-    value:
+    placeholder: |
+      1. In this environment...
+      2. With this config...
+      3. Run '...'
+      4. See error...
     render:
   validations:
     required: false
