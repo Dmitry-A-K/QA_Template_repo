@@ -84,9 +84,11 @@ body:
     label:  Лог сборки
     description: "скопировать текст лога сборки (Ctrl+C) и вставить (Ctrl+V) в этот блок"
     value:  |
-        <details><summary>Details</summary>
+        <details><summary>MVN CLEAN TEST</summary>
         <p>
-        Вставить сюда
+        
+        ВСТАВИТЬ ВМЕСТО ЭТОГО ТЕКСТА
+        
         </p>
         </details> 
     render:
@@ -145,7 +147,7 @@ body:
   attributes:
     label: "Приложение"
     options:
-      - IntelliJ IDEA Community Edition
+      - "IDEA: IntelliJ IDEA Community Edition"
       - Browser   Edge
       - Browser  Chrome
       - Browser   Brave
