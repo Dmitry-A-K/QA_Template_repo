@@ -74,7 +74,7 @@ body:
   attributes:
     label:  Логи сборки
     description: "Скопировать из приложения текст лога Ctrl+C и вставить Ctrl+V в этот блок."
-    value: " вставить лог из приложения "
+    value:
     render: markdown
   validations:
     required: false
