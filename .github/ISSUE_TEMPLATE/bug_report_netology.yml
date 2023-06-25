@@ -75,29 +75,27 @@ body:
   id: bug_log
   attributes:
     label:  Логи сборки
-    description: "Скопировать из приложения текст лога Ctrl+C и вставить Ctrl+V в этот блок, между ограждающими напоминаниями. Случайное удаление или неправильная вставка текста, приведет к поломке такого отчета"
+    description: "Скопировать из приложения текст лога Ctrl+C и вставить Ctrl+V в этот блок."
     value: " вставить лог из приложения "
     render: markdown
   validations:
     required: false
+    
 - type: markdown
   attributes:
     value: |
         ---
-        #####  ЗАПОЛНИТЬ ПОЛЕ СОБСТВЕННЫМИ ПАРАМЕТРАМИ ИЛИ ВЫБРАТЬ НУЖНОЕ В СПИСКАХ <br>
+        ######  ЗАПОЛНИТЬ ПОЛЕ СОБСТВЕННЫМИ ПАРАМЕТРАМИ ИЛИ ВЫБРАТЬ НУЖНОЕ В СПИСКАХ <br>
         
 - type: textarea
   attributes:
-    label: Окружение
-    description: |
+    label: ТЕСТОВОЕ ОКРУЖЕНИЕ
+    description: "заполнить поле собственными параметрами или выбрать нужное в списках"
       Пример:
         - ** OS **: Ubuntu 20.04
         - ** Node **: 13.14.0
         - ** npm **: 7.6.3
-    value: |
-        - ** OS **:
-        - ** Node **:
-        - ** npm **:
+    value:
     render: markdown
   validations:
     required: false
@@ -146,4 +144,12 @@ body:
       - "Java: OpenJDK 11"
   validations:
     required: false
-         
+- type: checkboxes
+  id: operating-systems
+  attributes:
+    label: Which operating systems have you used?
+    description: You may select more than one.
+    options:
+      - label: macOS
+      - label: Windows
+      - label: Linux
