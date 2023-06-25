@@ -4,7 +4,15 @@ title: "[BUG] <title>"
 labels: [Bug]
 
 body:
-
+- type: textarea
+  id: repro
+  attributes:
+    label: Название [2]
+    description: "How do you trigger this bug? Please walk us through it step by step."
+    value: |
+    render: markdown
+  validations:
+    required: true
 - type: textarea
   attributes:
     label: Окружение
