@@ -28,14 +28,7 @@ body:
   validations:
     required: true
     
-- type: input
-  id: bug_actual
-  attributes:
-    label: Актуальный результат
-    description: "реальное поведение тестируемого объекта"
-     placeholder:
-  validations:
-    required: true
+
     
 - type: input
   id: bug_url
