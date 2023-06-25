@@ -89,8 +89,9 @@ body:
   id: bug_surrounding
   attributes:
     label: ТЕСТОВОЕ ОКРУЖЕНИЕ
-    description: "заполнить пошаговый список, для воспроизведения теста в котором выявилась ошибка"
-    value: 
+    description: "заполнить поле собственными параметрами или выбрать нужное в списках"
+    value: |
+      - ** OS **: Linux
     render:
   validations:
     required: false
