@@ -144,13 +144,3 @@ body:
       - "Java: OpenJDK 11"
   validations:
     required: false
-    
-- type: checkboxes
-  id: operating-systems
-  attributes:
-    label: Which operating systems have you used?
-    description: "You may select more than one."
-    options:
-      - label: macOS
-      - label: Windows
-      - label: Linux
