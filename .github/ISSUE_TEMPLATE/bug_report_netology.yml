@@ -90,10 +90,11 @@ body:
   attributes:
       label: ТЕСТОВОЕ ОКРУЖЕНИЕ
     description: "заполнить пошаговый список, для воспроизведения теста в котором выявилась ошибка"
-    value: |
+    value: 
     render:
   validations:
     required: true
+    
 - type: dropdown
   id: test_os
   attributes:
@@ -120,6 +121,7 @@ body:
       - Ubuntu
   validations:
     required: false
+    
 - type: dropdown
   id: test_programm
   attributes:
@@ -131,6 +133,7 @@ body:
       - Brave
   validations:
     required: false
+    
 - type: dropdown
   id: test_surrounding
   attributes:
