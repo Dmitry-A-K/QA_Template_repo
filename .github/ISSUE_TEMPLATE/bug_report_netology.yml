@@ -24,7 +24,7 @@ body:
   id: bug_description
   attributes:
     label:  Описание
-    description: "описание возникшего дефекта и/или мнение, что могло привести к его возникновение"
+    description: "подробное описание возникшего дефекта и, что могло привести к его возникновение если есть собственные предположения"
     placeholder: "..."
     render: markdown
   validations:
